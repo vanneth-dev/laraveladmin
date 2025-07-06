@@ -44,4 +44,6 @@ return array (
   'avatar_width' => 1024,
   'avatar_height' => 1024,
   'avatar_quality' => 100,
+
+  'default_mode' => 'dark', // white, dark
 );

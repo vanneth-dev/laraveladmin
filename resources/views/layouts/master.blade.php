@@ -6,9 +6,6 @@
         <meta content="width=device-width, initial-scale=1.0, shrink-to-fit=no" name="viewport" />
         <script src="{{ custom_asset('js/pace.min.js') }}"></script>
         <link rel="stylesheet" href="{{ custom_asset('css/minimal.css') }}">
-        {{-- <link rel="stylesheet" href="{{ custom_asset('css/big-counter.css') }}"> --}}
-        {{-- <link rel="stylesheet" href="{{ custom_asset('css/mac-osx.css') }}"> --}}
-        {{-- <link rel="stylesheet" href="{{ custom_asset('css/corner-indicator.css') }}"> --}}
         @include('components.head')
         <style>
             .select2-container .select2-selection--single {
@@ -33,8 +30,6 @@
                 width: 20px;
             }
             .select2-container--default .select2-selection--single {
-                /* background-color: #fff; */
-                /* border: 1px solid #ebedf2; */
                 border-color: #ebedf2;
                 border-width: 2px;
                 border-radius: 4px;
@@ -43,7 +38,6 @@
                 background-color: #fff;
                 border-color: #ebedf2;
                 border-width: 2px;
-                /* border: 1px solid #ebedf2; */
                 border-radius: 4px;
                 box-sizing: border-box;
                 display: block;
@@ -53,9 +47,6 @@
                 z-index: 1051;
             }
             .select2-container--default .select2-search--dropdown .select2-search__field {
-                /* border: 1px solid #aaa; */
-                /* border-color: #ebedf2;
-                border-width: 2px; */
                 border: none;
             }
             .select2-search--dropdown .select2-search__field {
@@ -65,7 +56,6 @@
             }
             .select2-search--dropdown {
                 display: block;
-                /* padding: 5px 10px; */
                 padding: 0px 0;
             }
         </style>
@@ -73,22 +63,20 @@
     </head>
     <body class="language_{{ App::getLocale() }}">
         <div class="wrapper">
-            @include('components.sidebar') <!-- Sidebar -->
-            {{-- @include('components.spinner') <!-- Spinner --> --}}
+            @include('components.sidebar')
 
             <div class="main-panel">
                 @include('components.header')
 
                 <div class="container">
                     <div class="page-inner">
-                        {{-- @include('components.breadcrumb') --}}
                         @yield('content')
                     </div>
                 </div>
 
-                @include('components.footer') <!-- Footer -->
+                @include('components.footer')
             </div>
-            {{-- @include('components.template') <!-- Custom template --> --}}
+            @include('components.template')
         </div>
         @include('components.script')
         @yield('script')

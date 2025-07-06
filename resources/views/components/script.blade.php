@@ -1,3 +1,6 @@
+<script>
+    const BASE_URL = "{{ asset('') }}";
+</script>
 <!--   Core JS Files   -->
 <script src="{{ custom_asset('js/core/jquery-3.7.1.min.js') }}"></script>
 <script src="{{ custom_asset('js/core/popper.min.js') }}"></script>

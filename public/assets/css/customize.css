@@ -10,17 +10,11 @@
     font-family: 'Khmer OS Siemreap', sans-serif;
 }
 
-
-/* Formation Datatable */
-/* div.dataTables_wrapper div.dataTables_scrollBody {
-    min-height: 480px;
-} */
 .iframe_viewer{
     width: 100%;
     min-height: 700px;
 }
 
-/* attribute required and * in label */
 label.required:after {
     content: " *";
     color: red;
@@ -28,28 +22,24 @@ label.required:after {
 .no-footer tfoot {
     display: none;
 }
-/* .dataTables_scrollBody .no-footer thead tr{
-    display: none;
-} */
 .dataTables_scrollBody thead {
     visibility: hidden !important;
     height: 0 !important;
 }
-/* Apply rounded-0 to pagination buttons */
 .dataTables_paginate .pagination .page-item .page-link {
-    border-radius: 0 !important; /* Remove rounded corners */
+    border-radius: 0 !important;
 }
 .dataTables_paginate .pagination .page-item.active .page-link {
-    background-color: #007bff; /* Example: Bootstrap primary color */
+    background-color: #007bff;
     color: #fff;
     border-color: #007bff;
 }
 .dataTables_paginate .pagination .page-item .page-link:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #0056b3;
     color: #fff;
 }
 .dataTables_processing {
-    display: none !important;  /* Hide the processing overlay */
+    display: none !important;
 }
 .selectgroup-input:checked+.selectgroup-button {
     border-color: #1572e8;
@@ -66,7 +56,7 @@ label.required:after {
 
 .attachment-preview-container {
     position: relative;
-    display: none; /* Initially hide the container */
+    display: none;
     margin-top: 10px;
 }
 .attachment-preview-overlay {
@@ -91,18 +81,16 @@ label.required:after {
     color: white;
     padding: 5px 10px;
     cursor: pointer;
-    display: none; /* Initially hide the delete button */
+    display: none;
 }
 
 .sidebar[data-background-color=white] {
-    /* background: rgb(244 245 246) !important; */
     background: #ffffffc3 !important;
-}
-.logo-header[data-background-color=white] {
-    background: #ffffffc3 !important;
-    /* background: rgb(244 245 246) !important; */
 }
 .sidebar .nav>.nav-item.active>a, .sidebar[data-background-color=white] .nav>.nav-item.active>a {
     background: rgba(0, 0, 0, 0);
     color: #2a2f5b !important;
+}
+.logo-text[data-background-color=dark] {
+    color: #fff !important;
 }

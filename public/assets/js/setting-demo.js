@@ -72,9 +72,9 @@ $(".changeBackgroundColor").on("click", function () {
 function customCheckColor() {
   var logoHeader = $(".logo-header").attr("data-background-color");
   if (logoHeader !== "white") {
-    $(".logo-header .navbar-brand").attr("src", "assets/image/me.jpg");
+    $(".logo-header .navbar-brand").attr("src", BASE_URL + "assets/image/me.jpg");
   } else {
-    $(".logo-header .navbar-brand").attr("src", "assets/image/me.jpg");
+    $(".logo-header .navbar-brand").attr("src", BASE_URL + "assets/image/me.jpg");
   }
 }
 
