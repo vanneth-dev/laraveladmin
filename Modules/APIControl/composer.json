@@ -1,0 +1,30 @@
+{
+    "name": "nwidart/apicontrol",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\APIControl\\": "app/",
+            "Modules\\APIControl\\Database\\Factories\\": "database/factories/",
+            "Modules\\APIControl\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\APIControl\\Tests\\": "tests/"
+        }
+    }
+}

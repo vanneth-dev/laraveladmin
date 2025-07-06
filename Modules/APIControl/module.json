@@ -1,0 +1,11 @@
+{
+    "name": "APIControl",
+    "alias": "apicontrol",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\APIControl\\Providers\\APIControlServiceProvider"
+    ],
+    "files": []
+}
