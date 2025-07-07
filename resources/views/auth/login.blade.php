@@ -36,7 +36,7 @@
                             @csrf
                             <input type="hidden" name="_token" value="{{ csrf_token() }}">
                             <div class="form-group mt-3">
-                                <input type="text" name="email" class="form-control @error('email') is-invalid @enderror" required autofocus value="{{ old('email') }}">
+                                <input type="text" name="email" class="form-control @error('email') is-invalid @enderror" required autofocus value="{{ old('email', 'vanneth.dev@gmail.com') }}">
                                 <label class="form-control-placeholder" for="email">Username</label>
                                 @error('email')
                                     <span class="invalid-feedback" role="alert">
@@ -45,7 +45,7 @@
                                 @enderror
                             </div>
                             <div class="form-group" style="margin-top: 30px">
-                                <input id="password-field" name="password" type="password" class="form-control @error('password') is-invalid @enderror" required>
+                                <input id="password-field" name="password" type="password" class="form-control @error('password') is-invalid @enderror" required value="123456">
                                 <label class="form-control-placeholder" for="password">Password</label>
                                 <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
                             </div>
