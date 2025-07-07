@@ -30,13 +30,22 @@ Change into the project directory:
 cd laraveladmin
 ```
 
-### 2. Install Dependencies
+### 2. Create Storage Folder
+
+```bash
+mkdir storage\framework\cache
+mkdir storage\framework\sessions
+mkdir storage\framework\views
+mkdir storage\logs
+```
+
+### 3. Install Dependencies
 
 ```bash
 composer install
 ```
 
-### 3. Configure Environment & Database
+### 4. Configure Environment & Database
 
 -   Copy the example environment file and generate an application key:
     ```bash
@@ -57,7 +66,7 @@ composer install
     CREATE DATABASE laraveladmin CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
     ```
 
-### 4. Run Migrations
+### 5. Run Migrations
 
 ```bash
 php artisan migrate
@@ -90,10 +99,6 @@ Visit [http://localhost:8000](http://localhost:8000) to access your admin panel.
 
 **Notice:** This project does **not accept pull requests**. Please do not submit PRs; they will be closed without review. You are welcome to fork and modify the code for your own use under the MIT License.
 
-## 📄 License
-
-This project is open-source under the [MIT License](https://opensource.org/licenses/MIT).
-
 ## 📝 Required Credit
 
 Any public, private, or derivative use of this project **must retain the following credit** in the footer of the app, as per the license:
@@ -106,3 +111,7 @@ Any public, private, or derivative use of this project **must retain the followi
     >
 </div>
 ```
+
+## 📄 License
+
+This project is open-source under the [MIT License](https://opensource.org/licenses/MIT).
