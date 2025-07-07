@@ -69,17 +69,8 @@ composer install
 ### 5. Run Migrations
 
 ```bash
-php artisan migrate
+php artisan migrate --seed
 ```
-
----
-
-## 📝 Default Admin Credentials
-
-You can use the following credentials to log in:
-
--   **Email:** `vanneth.dev@gmail.com`
--   **Password:** `123456`
 
 ---
 
@@ -92,6 +83,15 @@ php artisan serve
 ```
 
 Visit [http://localhost:8000](http://localhost:8000) to access your admin panel.
+
+---
+
+## 📝 Default Admin Credentials
+
+You can use the following credentials to log in:
+
+-   **Email:** `vanneth.dev@gmail.com`
+-   **Password:** `123456`
 
 ---
 
