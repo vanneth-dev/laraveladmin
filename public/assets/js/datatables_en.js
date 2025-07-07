@@ -1,8 +1,8 @@
-const DatatableBasic = function() {
+const DatatableBasic = (function () {
     // Setup module components
-    const _componentDatatableBasic = function() {
+    const _componentDatatableBasic = function () {
         if (!$().DataTable) {
-            console.warn('Warning - datatables.min.js is not loaded.');
+            console.warn("Warning - datatables.min.js is not loaded.");
             return;
         }
         $.extend($.fn.dataTable.defaults, {
@@ -20,7 +20,10 @@ const DatatableBasic = function() {
             pageLength: 10,
             processing: true,
             serverSide: true,
-            lengthMenu: [[10, 15, 25, 50, -1], [10, 15, 25, 50, "All"]],
+            lengthMenu: [
+                [10, 15, 25, 50, -1],
+                [10, 15, 25, 50, "All"],
+            ],
             language: {
                 lengthMenu: "Show <span class='ms-2'>_MENU_ entries</span>",
                 info: "Showing _START_ to _END_ of _TOTAL_ Records",
@@ -32,21 +35,21 @@ const DatatableBasic = function() {
                     first: "First",
                     last: "Last",
                     next: "Next",
-                    previous: "Previous"
-                }
-            }
+                    previous: "Previous",
+                },
+            },
         });
     };
 
     // Return objects assigned to module
     return {
-        init: function() {
+        init: function () {
             _componentDatatableBasic();
-        }
-    }
-}();
+        },
+    };
+})();
 
 // Initialize module
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
     DatatableBasic.init();
 });

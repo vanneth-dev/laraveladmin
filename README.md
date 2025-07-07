@@ -86,10 +86,23 @@ Visit [http://localhost:8000](http://localhost:8000) to access your admin panel.
 
 ---
 
+## Contribution Policy
+
+**Notice:** This project does **not accept pull requests**. Please do not submit PRs; they will be closed without review. You are welcome to fork and modify the code for your own use under the MIT License.
+
 ## 📄 License
 
 This project is open-source under the [MIT License](https://opensource.org/licenses/MIT).
 
-## Contribution Policy
+## 📝 Required Credit
 
-**Notice:** This project does **not accept pull requests**. Please do not submit PRs; they will be closed without review. You are welcome to fork and modify the code for your own use under the MIT License.
+Any public, private, or derivative use of this project **must retain the following credit** in the footer of the app, as per the license:
+
+```html
+<div>
+    developer's <i class="fab fa-linkedin"></i>
+    <a href="https://kh.linkedin.com/in/vanneth-tak-bb8179225" target="_blank"
+        >linkedin</a
+    >
+</div>
+```

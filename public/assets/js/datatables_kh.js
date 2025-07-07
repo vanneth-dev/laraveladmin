@@ -1,8 +1,8 @@
-const DatatableBasic = function() {
+const DatatableBasic = (function () {
     // Setup module components
-    const _componentDatatableBasic = function() {
+    const _componentDatatableBasic = function () {
         if (!$().DataTable) {
-            console.warn('Warning - datatables.min.js is not loaded.');
+            console.warn("Warning - datatables.min.js is not loaded.");
             return;
         }
         $.extend($.fn.dataTable.defaults, {
@@ -20,7 +20,10 @@ const DatatableBasic = function() {
             pageLength: 10,
             processing: true,
             serverSide: true,
-            lengthMenu: [[10, 15, 25, 50, -1], ['១០', '១៥', '២៥', '៥០', 'ទាំងអស់']],
+            lengthMenu: [
+                [10, 15, 25, 50, -1],
+                ["១០", "១៥", "២៥", "៥០", "ទាំងអស់"],
+            ],
             language: {
                 lengthMenu: "បង្ហាញ _MENU_ ធាតុ",
                 info: "កំពុងបង្ហាញ _START_ ដល់ _END_ នៃ _TOTAL_ ធាតុ",
@@ -32,21 +35,21 @@ const DatatableBasic = function() {
                     first: "ដំបូង",
                     last: "ចុងក្រោយ",
                     next: "បន្ទាប់",
-                    previous: "មុន"
-                }
-            }
+                    previous: "មុន",
+                },
+            },
         });
     };
 
     // Return objects assigned to module
     return {
-        init: function() {
+        init: function () {
             _componentDatatableBasic();
-        }
-    }
-}();
+        },
+    };
+})();
 
 // Initialize module
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener("DOMContentLoaded", function () {
     DatatableBasic.init();
 });

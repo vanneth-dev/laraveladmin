@@ -1,16 +1,16 @@
-
 @font-face {
-    font-family: 'Khmer OS Siemreap';
-    src: url('fonts/khmer/Khmer%20OS%20Siemreap%20Regular.ttf') format('truetype');
+    font-family: "Khmer OS Siemreap";
+    src: url("fonts/khmer/Khmer%20OS%20Siemreap%20Regular.ttf")
+        format("truetype");
     font-weight: normal;
     font-style: normal;
 }
 
 .language_kh {
-    font-family: 'Khmer OS Siemreap', sans-serif;
+    font-family: "Khmer OS Siemreap", sans-serif;
 }
 
-.iframe_viewer{
+.iframe_viewer {
     width: 100%;
     min-height: 700px;
 }
@@ -41,17 +41,17 @@ label.required:after {
 .dataTables_processing {
     display: none !important;
 }
-.selectgroup-input:checked+.selectgroup-button {
+.selectgroup-input:checked + .selectgroup-button {
     border-color: #1572e8;
     z-index: 1;
     color: #1572e8;
-    background: rgba(21, 114, 232, .15);
+    background: rgba(21, 114, 232, 0.15);
 }
-.selectgroup-input:checked[value="N"]+.selectgroup-button {
+.selectgroup-input:checked[value="N"] + .selectgroup-button {
     border-color: #dc3545;
     z-index: 1;
     color: #dc3545;
-    background: rgba(220, 53, 69, .15);
+    background: rgba(220, 53, 69, 0.15);
 }
 
 .attachment-preview-container {
@@ -84,13 +84,69 @@ label.required:after {
     display: none;
 }
 
-.sidebar[data-background-color=white] {
+.sidebar[data-background-color="white"] {
     background: #ffffffc3 !important;
 }
-.sidebar .nav>.nav-item.active>a, .sidebar[data-background-color=white] .nav>.nav-item.active>a {
+.sidebar .nav > .nav-item.active > a,
+.sidebar[data-background-color="white"] .nav > .nav-item.active > a {
     background: rgba(0, 0, 0, 0);
     color: #2a2f5b !important;
 }
-.logo-text[data-background-color=dark] {
+.logo-text[data-background-color="dark"] {
     color: #fff !important;
+}
+
+.select2-container .select2-selection--single {
+    box-sizing: border-box;
+    cursor: pointer;
+    display: block;
+    height: 40px !important;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__rendered {
+    padding-left: 14px;
+    font-size: 1.1rem;
+    line-height: 34px;
+}
+.select2-container--default
+    .select2-selection--single
+    .select2-selection__arrow {
+    display: none;
+    height: 34px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    width: 20px;
+}
+.select2-container--default .select2-selection--single {
+    border-color: #ebedf2;
+    border-width: 2px;
+    border-radius: 4px;
+}
+.select2-dropdown {
+    background-color: #fff;
+    border-color: #ebedf2;
+    border-width: 2px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: block;
+    position: absolute;
+    left: -100000px;
+    width: 100%;
+    z-index: 1051;
+}
+.select2-container--default .select2-search--dropdown .select2-search__field {
+    border: none;
+}
+.select2-search--dropdown .select2-search__field {
+    padding: 6px 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+.select2-search--dropdown {
+    display: block;
+    padding: 0px 0;
 }
